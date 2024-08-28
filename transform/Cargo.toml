@@ -10,7 +10,7 @@ publish = false
 
 [dependencies]
 serde = { version = "1.0.197", features = ["derive"] }
-swc_core = { version = "0.90.13", features = [
+swc_core = { version = "0.101.4", features = [
   "ecma_visit",
   "ecma_ast",
 ] }
@@ -22,5 +22,5 @@ swc_core = { features = [
   "ecma_transforms",
   "testing_transform",
   "common",
-], version = "0.90.13" }
+], version = "0.101.4" }
 testing = "0.35.19"

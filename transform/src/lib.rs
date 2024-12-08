@@ -1,7 +1,7 @@
 use serde::Deserialize;
 use swc_core::ecma::{
-    ast::{ImportDecl, ImportSpecifier},
-    visit::{as_folder, noop_visit_mut_type, VisitMut, VisitMutWith, Fold},
+    ast::{ImportDecl, ImportSpecifier, Pass},
+    visit::{noop_visit_mut_type, visit_mut_pass, VisitMut, VisitMutWith},
 };
 
 pub struct TransformVisitor {
@@ -78,6 +78,6 @@ fn get_default_lock_core_js_pkg_path() -> String {
     "".to_string()
 }
 
-pub fn auto_css_modules(config: Config) -> impl Fold + VisitMut {
-    as_folder(TransformVisitor { config })
+pub fn auto_css_modules(config: Config) -> impl Pass + VisitMut {
+    visit_mut_pass(TransformVisitor { config })
 }

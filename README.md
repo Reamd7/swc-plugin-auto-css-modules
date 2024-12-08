@@ -5,7 +5,7 @@ Auto css modules plugin for swc.
 ## Install
 
 ```bash
-  pnpm i -D swc-plugin-auto-css-modules
+  pnpm i -D reamd7-swc-plugin-auto-css-modules
 ```
 
 You should install the following versions:
@@ -26,7 +26,7 @@ You should install the following versions:
   jsc: {
     experimental: {
       plugins: [
-+       ['swc-plugin-auto-css-modules', {}]
++       ['reamd7-swc-plugin-auto-css-modules', {}]
       ],
     },
   }

@@ -11,7 +11,7 @@ export const transform = (
         plugins: [
           [
             require.resolve(
-              '../target/wasm32-wasi/release/swc_plugin_auto_css_modules.wasm'
+              '../target/wasm32-wasip1/release/swc_plugin_auto_css_modules.wasm'
             ),
             opts,
           ],

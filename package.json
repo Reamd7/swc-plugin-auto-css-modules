@@ -1,6 +1,6 @@
 {
   "name": "reamd7-swc-plugin-auto-css-modules",
-  "version": "1.7.2",
+  "version": "1.7.3",
   "description": "Auto css modules plugin for swc",
   "author": "reamd7",
   "license": "MIT",
